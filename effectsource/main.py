@@ -82,6 +82,7 @@ def exportImages(filePath):
 def export(filePath):
 	exportJson(filePath)
 	exportImages(filePath)
+	LoggerUtils.sInfo("导出完成")
 
 
 #arg[1]:渠道名:proj.ios_mac_appstore
