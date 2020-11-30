@@ -1,0 +1,132 @@
+
+diaoxue.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+img_1
+  rotate: false
+  xy: 982, 178
+  size: 27, 36
+  orig: 27, 36
+  offset: 0, 0
+  index: -1
+img_10
+  rotate: false
+  xy: 514, 69
+  size: 26, 36
+  orig: 26, 36
+  offset: 0, 0
+  index: -1
+img_11
+  rotate: false
+  xy: 982, 216
+  size: 30, 36
+  orig: 30, 36
+  offset: 0, 0
+  index: -1
+img_12
+  rotate: false
+  xy: 2, 138
+  size: 479, 47
+  orig: 479, 47
+  offset: 0, 0
+  index: -1
+img_13
+  rotate: false
+  xy: 501, 205
+  size: 479, 47
+  orig: 479, 47
+  offset: 0, 0
+  index: -1
+img_14
+  rotate: false
+  xy: 2, 187
+  size: 497, 65
+  orig: 497, 65
+  offset: 0, 0
+  index: -1
+img_15
+  rotate: false
+  xy: 2, 89
+  size: 479, 47
+  orig: 479, 47
+  offset: 0, 0
+  index: -1
+img_16
+  rotate: false
+  xy: 2, 40
+  size: 479, 47
+  orig: 479, 47
+  offset: 0, 0
+  index: -1
+img_17
+  rotate: false
+  xy: 501, 156
+  size: 479, 47
+  orig: 479, 47
+  offset: 0, 0
+  index: -1
+img_18
+  rotate: false
+  xy: 483, 107
+  size: 479, 47
+  orig: 479, 47
+  offset: 0, 0
+  index: -1
+img_2
+  rotate: false
+  xy: 964, 118
+  size: 13, 36
+  orig: 13, 36
+  offset: 0, 0
+  index: -1
+img_3
+  rotate: false
+  xy: 542, 69
+  size: 23, 36
+  orig: 23, 36
+  offset: 0, 0
+  index: -1
+img_4
+  rotate: true
+  xy: 483, 42
+  size: 25, 36
+  orig: 25, 36
+  offset: 0, 0
+  index: -1
+img_5
+  rotate: false
+  xy: 2, 2
+  size: 29, 36
+  orig: 29, 36
+  offset: 0, 0
+  index: -1
+img_6
+  rotate: false
+  xy: 62, 2
+  size: 24, 36
+  orig: 24, 36
+  offset: 0, 0
+  index: -1
+img_7
+  rotate: false
+  xy: 33, 2
+  size: 27, 36
+  orig: 27, 36
+  offset: 0, 0
+  index: -1
+img_8
+  rotate: true
+  xy: 521, 44
+  size: 23, 36
+  orig: 23, 36
+  offset: 0, 0
+  index: -1
+img_9
+  rotate: false
+  xy: 483, 69
+  size: 29, 36
+  orig: 29, 36
+  offset: 0, 0
+  index: -1

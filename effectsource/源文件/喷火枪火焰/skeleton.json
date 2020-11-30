@@ -1,0 +1,1 @@
+{"skeleton":{"hash":"gQTKDX0ujdd1zecvDB9jWqnDUXg","spine":"3.6.53","width":0,"height":0,"images":"./images/"},"bones":[{"name":"root"},{"name":"骨骼","parent":"root"}],"slots":[{"name":"liewen","bone":"骨骼","attachment":"liewen"}],"skins":{"default":{"liewen":{"liewen":{"width":167,"height":66}}}},"animations":{"animation":{}}}
