@@ -98,6 +98,7 @@ if __name__ == "__main__":
 	filelist2 = os.path.join(curPath,"导出/images")
 	FileUtils.tryRmDir(filelist1)
 	FileUtils.makedirs(filelist2)
+	FileUtils.makedirs(filelist2)
 
 	#导出美术资源
 	filelist = os.listdir(os.path.join(curPath,"源文件"))
@@ -113,11 +114,14 @@ if __name__ == "__main__":
 			else:
 				LoggerUtils.sInfo("忽略导出文件夹:"+filename)
 			
+
+	inputName = input("请输入你想输入的plist名字:")
+	print("inputName = "+inputName)
 	#复制tps到导出里面
 	os.chdir(os.path.join(curPath,"导出"))
 	FileUtils.copyFile(os.path.join(curPath,"images.tps"),os.path.join(curPath,"导出"))
 	
-	command = "TexturePacker.exe images.tps" 
+	command = "TexturePacker.exe images.tps --data %s.plist --sheet %s.png"%(inputName,inputName) #--data  1.plist  --sheet 1.png
 	os.system(command)
 
 	FileUtils.removeFile(os.path.join(curPath,"导出/images.tps"))

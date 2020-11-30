@@ -478,13 +478,13 @@
             <key>format</key>
             <integer>2</integer>
             <key>realTextureFileName</key>
-            <string>images.png</string>
+            <string>23.png</string>
             <key>size</key>
             <string>{1093,253}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:20385de336ed20a4515dfd19c290e8fa:84d51b78e07113a84cfcd54cc03ebaec:335c286809c72a8e2d00961ad23f3d8a$</string>
+            <string>$TexturePacker:SmartUpdate:8558f136053bf4737c35b26ad0c4fab9:84d51b78e07113a84cfcd54cc03ebaec:cee8be272975057161331fbfff0b2db2$</string>
             <key>textureFileName</key>
-            <string>images.png</string>
+            <string>23.png</string>
         </dict>
     </dict>
 </plist>
