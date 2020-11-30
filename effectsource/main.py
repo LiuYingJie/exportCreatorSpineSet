@@ -38,11 +38,11 @@ curPath = os.getcwd()
 
 # projectPath = os.path.abspath(os.path.join(os.path.dirname(curPath), os.pardir))
 
+allPngNameArray = []
 
-
-def isInArrry(_str,array):
+def isInArrry(_str1,array):
 	for val in array:
-		if(val == _str):
+		if(val == _str1):
 			return True
 	
 	return False
@@ -65,12 +65,18 @@ def exportImages(filePath):
 	if os.path.isdir(imagesPath):
 		#导出所有的json
 		def callback(filepath):
+			fileBaseName = os.path.basename(filepath)
+			if isInArrry(fileBaseName,allPngNameArray):
+				LoggerUtils.error("重名图片:"+fileBaseName)
+			allPngNameArray.append(fileBaseName)
 			FileUtils.copyFile(filepath,imageExportPath)
 			pass
 
 		FileUtils.diguiDirWithTail(imagesPath,callback,".png")
 	else:
 		LoggerUtils.error("找不到文件夹"+imagesPath)
+
+	print("allPngNameArray = ",allPngNameArray)
 	pass
 
 
@@ -104,10 +110,11 @@ if __name__ == "__main__":
 		filepath = os.path.join(curPath,"源文件", filename)
 		print("filepath = "+filepath)
 		if os.path.isdir(filepath):
+			print("filename !!!!!! = ",filename)
 			if not isInArrry(filename,notExportArray):
 				export(filepath)
 			else:
-				print("忽略导出文件夹:"+filename)
+				LoggerUtils.sInfo("忽略导出文件夹:"+filename)
 			
 
 
