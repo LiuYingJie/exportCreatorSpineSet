@@ -26,10 +26,8 @@ from tkinter import messagebox
 # from PIL import Image
 
 from framework.UtilsHelper import FileUtils
+from framework.UtilsHelper import LoggerUtils
 
-# import framework.UtilsHelper.FileUtils 
-# import framework.UtilsHelper.LoggerUtils 
-# import framework.UtilsHelper.StringUtils 
 
 
 
@@ -49,21 +47,36 @@ def isInArrry(_str,array):
 	
 	return False
 
-
-
-def export(filePath):
+def exportJson(filePath):
 	#导出所有的json
 	exportJsonPath = os.path.join(curPath,"导出")
 	def callback(filepath):
-		print("filepath -->"+exportJsonPath)
 		FileUtils.copyFile(filepath,exportJsonPath)
 		pass
 
 	FileUtils.diguiDirWithTail(filepath,callback,".json")
 
-
+def exportImages(filePath):
 	#导出所有图片
+	imageExportPath = os.path.join(curPath,"导出/images")
+
+	# FileUtils.diguiDirWithTail(filepath,callback,".json")
+	imagesPath = os.path.join(filepath,"images")
+	if os.path.isdir(imagesPath):
+		#导出所有的json
+		def callback(filepath):
+			FileUtils.copyFile(filepath,imageExportPath)
+			pass
+
+		FileUtils.diguiDirWithTail(imagesPath,callback,".png")
+	else:
+		LoggerUtils.error("找不到文件夹"+imagesPath)
 	pass
+
+
+def export(filePath):
+	exportJson(filePath)
+	exportImages(filePath)
 
 
 #arg[1]:渠道名:proj.ios_mac_appstore
