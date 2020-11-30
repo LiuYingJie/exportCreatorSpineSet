@@ -76,7 +76,6 @@ def exportImages(filePath):
 	else:
 		LoggerUtils.error("找不到文件夹"+imagesPath)
 
-	print("allPngNameArray = ",allPngNameArray)
 	pass
 
 
@@ -88,7 +87,6 @@ def export(filePath):
 #arg[1]:渠道名:proj.ios_mac_appstore
 if __name__ == "__main__":
 	
-	print("curPath = "+curPath)
 	configPath = os.path.join(curPath,"export.json")
 	config = FileUtils.getJsonFileData(configPath)
 	notExportArray = config["notExport"]
@@ -101,16 +99,13 @@ if __name__ == "__main__":
 
 	#导出美术资源
 	filelist = os.listdir(os.path.join(curPath,"源文件"))
-	print("filelist =",filelist)
 
 
 
 	#第一层文件夹"源文件"
 	for filename in filelist:
 		filepath = os.path.join(curPath,"源文件", filename)
-		print("filepath = "+filepath)
 		if os.path.isdir(filepath):
-			print("filename !!!!!! = ",filename)
 			if not isInArrry(filename,notExportArray):
 				export(filepath)
 			else:
