@@ -94,9 +94,10 @@ if __name__ == "__main__":
 
 
 	#清理导出下面的文件
-	filelist1 = os.path.join(curPath,"导出/images")
+	filelist1 = os.path.join(curPath,"导出")
+	filelist2 = os.path.join(curPath,"导出/images")
 	FileUtils.tryRmDir(filelist1)
-	FileUtils.makedirs(filelist1)
+	FileUtils.makedirs(filelist2)
 
 	#导出美术资源
 	filelist = os.listdir(os.path.join(curPath,"源文件"))
@@ -119,6 +120,7 @@ if __name__ == "__main__":
 	command = "TexturePacker.exe images.tps" 
 	os.system(command)
 
+	FileUtils.removeFile(os.path.join(curPath,"导出/images.tps"))
 
 
 

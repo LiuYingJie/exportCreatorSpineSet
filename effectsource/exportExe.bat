@@ -1,0 +1,1 @@
+pyinstaller.exe -F -p .\FrameWork\ .\main.py
