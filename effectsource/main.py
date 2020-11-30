@@ -112,8 +112,12 @@ if __name__ == "__main__":
 			else:
 				LoggerUtils.sInfo("忽略导出文件夹:"+filename)
 			
-
-
+	#复制tps到导出里面
+	os.chdir(os.path.join(curPath,"导出"))
+	FileUtils.copyFile(os.path.join(curPath,"images.tps"),os.path.join(curPath,"导出"))
+	
+	command = "TexturePacker.exe images.tps" 
+	os.system(command)
 
 
 
